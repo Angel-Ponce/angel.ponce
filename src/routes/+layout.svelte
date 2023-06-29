@@ -1,7 +1,8 @@
 <script>
 	import '../global.css';
-	import { MouseFocus } from '$atoms';
+	import { MouseFocus, ToggleTheme } from '$atoms';
 </script>
 
 <MouseFocus />
+<ToggleTheme />
 <slot />

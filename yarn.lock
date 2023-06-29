@@ -1726,6 +1726,11 @@ svelte-hmr@^0.15.2:
   resolved "https://registry.yarnpkg.com/svelte-hmr/-/svelte-hmr-0.15.2.tgz#d2f6fc82e040f2734abd54cea5cbef46828f2538"
   integrity sha512-q/bAruCvFLwvNbeE1x3n37TYFb3mTBJ6TrCq6p2CoFbSTNhDE9oAtEfpy+wmc9So8AG0Tja+X0/mJzX9tSfvIg==
 
+svelte-ionicons@^0.5.7:
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/svelte-ionicons/-/svelte-ionicons-0.5.7.tgz#9cd7a1bba311dcef0f89df7e329425c3d37b3a03"
+  integrity sha512-ilSzXLz42pJWs0VJYILNY1zxWWRmV2k9XtxZs+9eVZlkM7KqGj5gIbQVF/tBRawBCe+trsylY1sFY0VsjrfmdA==
+
 svelte-preprocess@^5.0.3:
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-5.0.4.tgz#2123898e079a074f7f4ef1799e10e037f5bcc55b"
