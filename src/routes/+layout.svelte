@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
 	import '../global.css';
 	import { Button, MouseFocus } from '$atoms';
 	import { ToggleTheme } from '$molecules';
+
+	let toggle: () => void;
 </script>
 
 <svelte:head>
@@ -16,8 +18,8 @@
 	class="w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
 >
 	<section class="max-w-5xl">
-		<Button color="ghost">
-			<ToggleTheme />
+		<Button color="ghost" on:click={toggle}>
+			<ToggleTheme bind:toggle disabled />
 		</Button>
 		<slot />
 	</section>

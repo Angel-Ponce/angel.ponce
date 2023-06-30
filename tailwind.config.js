@@ -16,6 +16,15 @@ export default {
 			fontFamily: {
 				tajawal: "'Tajawal', sans-serif",
 				lilita: "'Lilita One', cursive"
+			},
+			animation: {
+				'rotate-one': 'rotate-one 200ms ease'
+			},
+			keyframes: {
+				'rotate-one': {
+					from: { transform: 'rotate(0deg)' },
+					to: { transform: 'rotate(360deg)' }
+				}
 			}
 		}
 	},
