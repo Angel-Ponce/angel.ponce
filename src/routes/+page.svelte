@@ -1,3 +1,7 @@
+<script>
+	import { Button } from '$atoms';
+</script>
+
 <p class="font-lilita text-8xl mt-10">Hola mundo</p>
 <p class="text-2xl text-justify">
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto deleniti magni laboriosam,
@@ -12,3 +16,7 @@
 	nesciunt impedit dolorem deleniti consequuntur unde! Blanditiis! Quis voluptates expedita repellat
 	architecto accusantium quos ut.
 </p>
+
+<Button className="mt-4" color="primary">botón 1</Button>
+<Button className="mt-4" color="secondary">botón 2</Button>
+<Button className="mt-4" color="ghost">botón 3</Button>

@@ -569,6 +569,11 @@ chokidar@^3.4.1, chokidar@^3.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
+clsx@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
+  integrity sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==
+
 code-red@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/code-red/-/code-red-1.0.3.tgz#bbd3b0a27dc53c9af13f6756120a9dbcdd68a5f2"

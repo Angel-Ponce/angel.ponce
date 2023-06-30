@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"clsx": "^1.2.1",
 		"store2": "^2.14.2"
 	}
 }

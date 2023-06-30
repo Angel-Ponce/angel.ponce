@@ -7,7 +7,11 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'dark-base': slate[800]
+				'dark-base': slate[800],
+				primary: '#0C4160',
+				secondary: '#738FA7',
+				grayblue: '#C3CEDA',
+				darkblue: '#071330'
 			},
 			fontFamily: {
 				tajawal: "'Tajawal', sans-serif",
