@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { SunnyOutline, Moon } from 'svelte-ionicons';
 	import store from 'store2';
+	import { IonIcon } from '$atoms';
 
 	let theme: 'dark' | 'light';
 
@@ -36,10 +37,10 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="cursor-pointer" on:click={toggle}>
+<div class="cursor-pointer w-fit" on:click={toggle}>
 	{#if theme == 'dark'}
-		<Moon />
+		<IonIcon icon={Moon} />
 	{:else}
-		<SunnyOutline />
+		<IonIcon icon={SunnyOutline} />
 	{/if}
 </div>

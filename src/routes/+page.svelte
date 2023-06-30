@@ -1,5 +1,5 @@
-<p class="font-lilita text-8xl">Hola mundo</p>
-<p class="text-2xl">
+<p class="font-lilita text-8xl mt-10">Hola mundo</p>
+<p class="text-2xl text-justify">
 	Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iusto deleniti magni laboriosam,
 	cumque aspernatur tempore voluptate quisquam impedit, reprehenderit officia commodi quaerat fuga
 	quis rerum, error ratione quod minima. Aspernatur et repellat, animi voluptates accusantium

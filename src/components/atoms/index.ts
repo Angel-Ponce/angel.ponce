@@ -1,4 +1,4 @@
+import IonIcon from './IonIcon.svelte';
 import MouseFocus from './MouseFocus.svelte';
-import ToggleTheme from './ToggleTheme.svelte';
 
-export { MouseFocus, ToggleTheme };
+export { MouseFocus, IonIcon };

@@ -10,7 +10,8 @@
 		"sourceMap": true,
 		"strict": true,
 		"paths": {
-			"$atoms": ["./src/components/atoms"]
+			"$atoms": ["./src/components/atoms"],
+			"$molecules": ["./src/components/molecules"]
 		}
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias

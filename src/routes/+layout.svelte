@@ -1,6 +1,7 @@
 <script>
 	import '../global.css';
-	import { MouseFocus, ToggleTheme } from '$atoms';
+	import { MouseFocus } from '$atoms';
+	import { ToggleTheme } from '$molecules';
 </script>
 
 <svelte:head>
