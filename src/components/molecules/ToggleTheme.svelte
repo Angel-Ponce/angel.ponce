@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { SunnyOutline, Moon } from 'svelte-ionicons';
+	import { SunnyOutline, Moon, Sunny } from 'svelte-ionicons';
 	import store from 'store2';
 	import { IonIcon } from '$atoms';
 	import clsx from 'clsx';
@@ -42,15 +42,19 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
-	class="cursor-pointer w-fit"
+	class="cursor-pointer w-fit fixed top-10 right-10"
 	on:click={() => {
 		if (disabled) return;
 		toggle();
 	}}
 >
 	{#if theme == 'dark'}
-		<IonIcon icon={Moon} className={clsx({ 'animate-rotate-one': spin })} />
+		<IonIcon size={25} icon={Moon} className={clsx({ 'animate-rotate-one': spin })} />
 	{:else}
-		<IonIcon icon={SunnyOutline} className={clsx({ 'animate-rotate-one': spin })} />
+		<IonIcon
+			size={25}
+			icon={Sunny}
+			className={clsx({ 'animate-rotate-one': spin }, 'text-orange-400')}
+		/>
 	{/if}
 </div>
