@@ -11,5 +11,9 @@
 </svelte:head>
 
 <MouseFocus />
-<ToggleTheme />
-<slot />
+<div class="w-full min-h-screen flex justify-center py-20">
+	<div class="max-w-5xl">
+		<ToggleTheme />
+		<slot />
+	</div>
+</div>

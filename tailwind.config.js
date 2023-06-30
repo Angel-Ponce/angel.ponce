@@ -7,7 +7,6 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				base: slate[50],
 				'dark-base': slate[800]
 			},
 			fontFamily: {

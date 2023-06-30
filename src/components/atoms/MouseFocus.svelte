@@ -18,7 +18,7 @@
 />
 
 <div
-	class="rounded-full bg-[#738FA7] opacity-50 fixed pointer-events-none"
+	class="rounded-full bg-[#738FA7] dark:bg-[#C3CEDA] opacity-50 fixed pointer-events-none"
 	style:top={`${$coords.y}px`}
 	style:left={`${$coords.x}px`}
 	style:width={`${$ratio}px`}
