@@ -9,6 +9,10 @@ export default {
 			colors: {
 				base: slate[50],
 				'dark-base': slate[800]
+			},
+			fontFamily: {
+				tajawal: "'Tajawal', sans-serif",
+				lilita: "'Lilita One', cursive"
 			}
 		}
 	},
