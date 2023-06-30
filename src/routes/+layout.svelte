@@ -1,6 +1,6 @@
 <script>
 	import '../global.css';
-	import { MouseFocus } from '$atoms';
+	import { Button, MouseFocus } from '$atoms';
 	import { ToggleTheme } from '$molecules';
 </script>
 
@@ -12,9 +12,13 @@
 </svelte:head>
 
 <MouseFocus />
-<div class="w-full min-h-screen flex justify-center py-20">
+<div
+	class="w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50"
+>
 	<div class="max-w-5xl">
-		<ToggleTheme />
+		<Button color="ghost">
+			<ToggleTheme />
+		</Button>
 		<slot />
 	</div>
 </div>
