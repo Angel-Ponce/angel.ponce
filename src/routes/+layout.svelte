@@ -12,13 +12,13 @@
 </svelte:head>
 
 <MouseFocus />
-<div
-	class="w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50"
+<main
+	class="w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
 >
-	<div class="max-w-5xl">
+	<section class="max-w-5xl">
 		<Button color="ghost">
 			<ToggleTheme />
 		</Button>
 		<slot />
-	</div>
-</div>
+	</section>
+</main>
