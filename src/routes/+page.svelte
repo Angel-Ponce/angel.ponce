@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Link } from '$atoms';
-	import {AboutMe} from "$organisms"
+	import { AboutMe } from '$organisms';
 
 	const links = [
 		{
@@ -28,4 +28,6 @@
 	{/each}
 </div>
 
-<AboutMe />
+<div class="w-full flex flex-col items-center">
+	<AboutMe />
+</div>
