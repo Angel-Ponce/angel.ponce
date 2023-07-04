@@ -1,8 +1,4 @@
-<script lang="ts">
-	export let className = '';
-</script>
-
-<a href="https://github.com/Angel-Ponce" class={className} target="_blank">
+<a href="https://github.com/Angel-Ponce" class={'cursor-pointer'} target="_blank">
 	<svg
 		class="dark:hidden"
 		width="22"

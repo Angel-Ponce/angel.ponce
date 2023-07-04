@@ -11,10 +11,10 @@
 			{$t('“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” ~ Bill Gates')}
 		</p>
 		<div class="flex items-center gap-4">
-			<Linkedin className="cursor-pointer" />
-			<Github className="cursor-pointer" />
-			<Gmail className="cursor-pointer" />
-			<CV className="cursor-pointer" />
+			<Linkedin />
+			<Github />
+			<Gmail />
+			<CV />
 		</div>
 	</div>
 </section>

@@ -1,8 +1,4 @@
-<script lang="ts">
-	export let className = '';
-</script>
-
-<a href="https://linkedin.com/in/angel-p11/" target="_blank" class={className}>
+<a href="https://linkedin.com/in/angel-p11/" target="_blank" class={'cursor-pointer'}>
 	<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g clip-path="url(#clip0_9_311)">
 			<path

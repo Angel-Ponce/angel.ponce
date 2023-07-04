@@ -1,11 +1,7 @@
-<script lang="ts">
-	export let className = '';
-</script>
-
 <a
 	href="https://onedrive.live.com/View.aspx?resid=684BD9C903415EAA!41859&wdEmbedFS=1&authkey=!ABgS3ugFQPd5f4M"
 	target="_blank"
-	class={className}
+	class={'cursor-pointer'}
 >
 	<svg
 		class="dark:hidden"
