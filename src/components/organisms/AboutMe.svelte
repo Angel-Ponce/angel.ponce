@@ -10,11 +10,11 @@
 		<p class="italic max-w-sm text-base text-center">
 			{$t('“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” ~ Bill Gates')}
 		</p>
-		<div class="flex items-center gap-3">
+		<div class="flex items-center gap-4">
 			<Linkedin
 				className="grayscale hover:grayscale-0 transition-all duration-200 cursor-pointer"
 			/>
-			<Github className="grayscale hover:grayscale-0 transition-all duration-200 cursor-pointer" />
+			<Github className="opacity-60 hover:opacity-100 transition-all duration-200 cursor-pointer" />
 			<Gmail className="grayscale hover:grayscale-0 transition-all duration-200 cursor-pointer" />
 			<CV className="grayscale hover:grayscale-0 transition-all duration-200 cursor-pointer" />
 		</div>
