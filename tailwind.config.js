@@ -16,12 +16,22 @@ export default {
 				inter: "'Inter', sans-serif;"
 			},
 			animation: {
-				'rotate-one': 'rotate-one 200ms ease'
+				'rotate-one': 'rotate-one 200ms ease',
+				'slide-l-to-r': 'slide-l-to-r 500ms ease-in',
+				'slide-r-to-l': 'slide-r-to-l 500ms ease-in'
 			},
 			keyframes: {
 				'rotate-one': {
 					from: { transform: 'rotate(0deg)' },
 					to: { transform: 'rotate(360deg)' }
+				},
+				'slide-l-to-r': {
+					from: { transform: 'translateX(-30%)' },
+					to: { transform: 'translateX(0%)' }
+				},
+				'slide-r-to-l': {
+					from: { transform: 'translateX(30%)' },
+					to: { transform: 'translateX(0%)' }
 				}
 			}
 		}
