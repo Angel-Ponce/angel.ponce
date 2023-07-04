@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex w-full items-center flex-col gap-4">
-	<section id="about" class="flex gap-4 items-center">
+	<section id="about" class="flex gap-4 items-center justify-center flex-wrap">
 		<Angel />
 		<div class="flex flex-col items-center gap-6 animate-slide-r-to-l">
 			<h1 class="font-bold font-inter text-7xl text-center">{$t('Angel Ponce')}</h1>
