@@ -4,7 +4,7 @@
 
 	const links = [
 		{
-			text: 'Sobre mi',
+			text: 'Acerca de',
 			href: '#about'
 		},
 		{
