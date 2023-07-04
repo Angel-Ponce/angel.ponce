@@ -15,7 +15,7 @@ export default {
 			},
 			fontFamily: {
 				tajawal: "'Tajawal', sans-serif",
-				lilita: "'Lilita One', cursive"
+				inter: "'Inter', sans-serif;"
 			},
 			animation: {
 				'rotate-one': 'rotate-one 200ms ease'
