@@ -15,7 +15,8 @@ const config = {
 		alias: {
 			$atoms: './src/components/atoms',
 			$molecules: './src/components/molecules',
-			$stores: './src/stores'
+			$stores: './src/stores',
+			$i18n: './src/i18n'
 		}
 	}
 };

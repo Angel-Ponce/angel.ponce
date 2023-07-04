@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import t from '$i18n/t';
 	import { tweened } from 'svelte/motion';
 
 	export let link: { href: string; text: string };
@@ -20,7 +21,7 @@
 	}}
 	on:click={async () => await goto(link.href)}
 >
-	<a href={link.href}>{link.text}</a>
+	<a href={link.href}>{$t(link.text)}</a>
 	<div class="flex justify-end">
 		<div class="h-0.5 bg-darkblue dark:bg-grayblue" style:width={`${$width}px`} />
 	</div>
