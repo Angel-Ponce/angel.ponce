@@ -1,8 +1,28 @@
-<script>
-	import { Button } from '$atoms';
+<script lang="ts">
+	import { Link } from '$atoms';
+
+	const links = [
+		{
+			text: 'Sobre mi',
+			href: '#about'
+		},
+		{
+			text: 'Experiencia',
+			href: '#experince'
+		},
+		{
+			text: 'Proyectos',
+			href: '#projects'
+		},
+		{
+			text: 'Tecnología',
+			href: '#tech'
+		}
+	];
 </script>
 
-<p class="font-inter text-8xl my-10">Angel Ponce</p>
-<p class="text-2xl text-justify">
-	FullStack developer, enfocado en desarrollar aplicaciones de alta calidad y prestigio.
-</p>
+<div class="w-full flex gap-8 items-center justify-end">
+	{#each links as link}
+		<Link {link} />
+	{/each}
+</div>

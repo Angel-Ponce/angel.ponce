@@ -14,9 +14,9 @@
 
 <MouseFocus />
 <main
-	class="w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
+	class="font-tajawal w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
 >
-	<section class="max-w-5xl">
+	<section class="max-w-5xl w-full">
 		<ToggleTheme />
 		<slot />
 	</section>

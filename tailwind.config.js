@@ -1,5 +1,3 @@
-import { slate } from 'tailwindcss/colors';
-
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -7,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'dark-base': slate[800],
+				'dark-base': '#000',
 				primary: '#0C4160',
 				secondary: '#738FA7',
 				grayblue: '#C3CEDA',
