@@ -22,6 +22,6 @@
 >
 	<a href={link.href}>{link.text}</a>
 	<div class="flex justify-end">
-		<div class="h-0.5 bg-darkblue" style:width={`${$width}px`} />
+		<div class="h-0.5 bg-darkblue dark:bg-grayblue" style:width={`${$width}px`} />
 	</div>
 </div>
