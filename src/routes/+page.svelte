@@ -22,7 +22,7 @@
 	];
 </script>
 
-<div class="w-full flex gap-8 items-center justify-end flex-wrap mb-14">
+<div class="w-full flex gap-8 items-center justify-end flex-wrap mb-16">
 	{#each links as link}
 		<Link {link} />
 	{/each}
