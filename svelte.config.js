@@ -14,7 +14,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			$atoms: './src/components/atoms',
-			$molecules: './src/components/molecules'
+			$molecules: './src/components/molecules',
+			$stores: './src/stores'
 		}
 	}
 };

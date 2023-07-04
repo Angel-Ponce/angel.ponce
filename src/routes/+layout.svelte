@@ -2,6 +2,14 @@
 	import '../global.css';
 	import { MouseFocus } from '$atoms';
 	import { ToggleTheme } from '$molecules';
+	import { onMount } from 'svelte';
+	import store from 'store2';
+	import { setLang } from '$stores';
+
+	onMount(() => {
+		const storedLang = store.get('lang');
+		setLang(storedLang || 'es');
+	});
 </script>
 
 <svelte:head>
