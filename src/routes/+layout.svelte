@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../global.css';
-	import { MouseFocus } from '$atoms';
+	import { MouseFocus, ToggleLang } from '$atoms';
 	import { ToggleTheme } from '$molecules';
 	import { onMount } from 'svelte';
 	import store from 'store2';
@@ -25,7 +25,10 @@
 	class="scroll-smooth font-tajawal w-full min-h-screen flex justify-center py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
 >
 	<section class="max-w-5xl w-full">
-		<ToggleTheme />
+		<div class="fixed top-10 right-10 flex gap-4 items-center">
+			<ToggleTheme />
+			<ToggleLang />
+		</div>
 		<slot />
 	</section>
 </main>

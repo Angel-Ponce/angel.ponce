@@ -42,7 +42,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
-	class="cursor-pointer w-fit fixed top-10 right-10"
+	class="cursor-pointer w-fit"
 	on:click={() => {
 		if (disabled) return;
 		toggle();
