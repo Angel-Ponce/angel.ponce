@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { SunnyOutline, Moon, Sunny } from 'svelte-ionicons';
+	import { Moon, Sunny } from 'svelte-ionicons';
 	import store from 'store2';
 	import { IonIcon } from '$atoms';
 	import clsx from 'clsx';

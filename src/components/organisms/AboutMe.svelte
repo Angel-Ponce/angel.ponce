@@ -1,6 +1,26 @@
 <script lang="ts">
-	import { Angel, CV, Github, Gmail, Linkedin } from '$atoms';
+	import { Angel, IonIcon } from '$atoms';
+	import { LogoLinkedin, LogoGithub, Mail, DocumentText } from 'svelte-ionicons';
 	import t from '$i18n/t';
+
+	const socials = [
+		{
+			href: 'https://linkedin.com/in/angel-p11/',
+			icon: LogoLinkedin
+		},
+		{
+			href: 'https://github.com/Angel-Ponce',
+			icon: LogoGithub
+		},
+		{
+			href: 'mailto:acdpf000@gmail.com',
+			icon: Mail
+		},
+		{
+			href: 'https://onedrive.live.com/View.aspx?resid=684BD9C903415EAA!41859&wdEmbedFS=1&authkey=!ABgS3ugFQPd5f4M',
+			icon: DocumentText
+		}
+	];
 </script>
 
 <div class="flex w-full items-center flex-col gap-4">
@@ -14,10 +34,15 @@
 				)}
 			</p>
 			<div class="flex items-center gap-4">
-				<Linkedin />
-				<Github />
-				<Gmail />
-				<CV />
+				{#each socials as social}
+					<a
+						href={social.href}
+						target="_blank"
+						class={'cursor-pointer hover:-translate-y-1 transition-transform duration-200'}
+					>
+						<IonIcon icon={social.icon} size={25} className="text-secondary dark:text-grayblue" />
+					</a>
+				{/each}
 			</div>
 		</div>
 	</section>
