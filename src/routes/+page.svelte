@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Link } from '$atoms';
-	import { AboutMe, Experince } from '$organisms';
+	import { AboutMe, Experince, Projects } from '$organisms';
 
 	const links = [
 		{
@@ -31,4 +31,5 @@
 <div class="w-full flex gap-14 flex-col items-center">
 	<AboutMe />
 	<Experince />
+	<Projects />
 </div>
