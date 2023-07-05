@@ -1,9 +1,15 @@
 <script>
 	import t from '$i18n/t';
 	import { fly } from 'svelte/transition';
+	import { Pentcloud, Finanssoreal, VSCode } from '$svg';
+
+	let works = [
+		{ title: 'Full-Stack Developer', icon: Pentcloud, desc: 'Mar. 2022 ~ Actualmente' },
+		{ title: 'Tech Lead', icon: Finanssoreal, desc: 'Mar. 2021 ~ Mar. 2022' },
+		{ title: 'Freelancer Software Developer', icon: VSCode, desc: 'Oct. 2020 ~ Actualmente' }
+	];
 
 	let experinceYears = 0;
-
 	for (let i = 1; i <= 3; i++) {
 		setTimeout(() => {
 			experinceYears = i;
@@ -14,17 +20,34 @@
 <section id="experince" class="flex w-full items-center flex-col gap-4">
 	<h2 class="font-bold font-inter text-left w-full text-2xl">{$t('Experiencia')}</h2>
 	<div class="w-full flex gap-4 flex-wrap">
-		<div class="flex-1 h-80 flex flex-col justify-center items-center gap-5">
+		<div class="flex-1 min-w-[250px] h-80 flex flex-col justify-center items-center gap-5">
 			<h3 class="font-bold text-7xl font-inter">
 				+
 				{#key experinceYears}
-					<span class="inline-block" in:fly={{ y: 20, opacity: 1 }}>
+					<span class="inline-block text-center" in:fly={{ y: 20, opacity: 1 }}>
 						{experinceYears}
 					</span>
 				{/key}
 			</h3>
-			<p>{$t('años de experiencia')}</p>
+			<p class="text-center">{$t('años de experiencia')}</p>
 		</div>
-		<div class="flex-1 h-80 max-h-[320px] overflow-y-auto">a</div>
+		<div class="flex-1 min-w-[250px] flex justify-center h-full max-h-[320px] overflow-y-auto">
+			<div>
+				{#each works as work, i}
+					<div class="flex items-center gap-4">
+						<svelte:component this={work.icon} />
+						<div class="flex flex-col gap-0">
+							<p>{$t(work.title)}</p>
+							<p class="text-base text-secondary">
+								{$t(work.desc)}
+							</p>
+						</div>
+					</div>
+					{#if i != works.length - 1}
+						<div class="ml-[15px] my-1 h-12 w-px bg-darkblue" />
+					{/if}
+				{/each}
+			</div>
+		</div>
 	</div>
 </section>

@@ -34,6 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"clsx": "^1.2.1",
+		"date-fns": "^2.30.0",
 		"store2": "^2.14.2",
 		"swiper": "^10.0.3"
 	}
