@@ -31,14 +31,18 @@
 			</h3>
 			<p class="text-center">{$t('años de experiencia')}</p>
 		</div>
-		<div class="flex-1 min-w-[250px] flex justify-center h-full max-h-[320px] overflow-y-auto">
+		<div class="flex-1 min-w-[250px] flex justify-center items-center h-80 overflow-y-auto">
 			<div>
 				{#each works as work, i}
 					<div
 						class="flex items-center gap-4 animate-slide-u-to-d"
 						style:animation-duration={`${300 * (i + 1)}ms`}
 					>
-						<svelte:component this={work.icon} />
+						<div
+							class="rounded-full flex items-center justify-center w-10 h-10 bg-grayblue bg-opacity-0 dark:bg-opacity-10"
+						>
+							<svelte:component this={work.icon} />
+						</div>
 						<div class="flex flex-col gap-0">
 							<p>{$t(work.title)}</p>
 							<p class="text-base text-secondary">
@@ -48,7 +52,7 @@
 					</div>
 					{#if i != works.length - 1}
 						<div
-							class="ml-[15px] my-1 h-12 w-px bg-darkblue animate-slide-u-to-d"
+							class="ml-[20px] my-1 h-12 w-px bg-darkblue dark:bg-grayblue animate-slide-u-to-d"
 							style:animation-duration={`${300 * (i + 1)}ms`}
 						/>
 					{/if}
