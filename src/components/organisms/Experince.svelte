@@ -25,6 +25,6 @@
 			</h3>
 			<p>{$t('años de experiencia')}</p>
 		</div>
-		<div class="flex-1 h-80 max-h-[320px]" />
+		<div class="flex-1 h-80 max-h-[320px] overflow-y-auto">a</div>
 	</div>
 </section>

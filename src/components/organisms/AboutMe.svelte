@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { Angel, IonIcon } from '$atoms';
+	import { IonIcon } from '$atoms';
 	import { LogoLinkedin, LogoGithub, Mail, DocumentText } from 'svelte-ionicons';
 	import t from '$i18n/t';
+	import { Angel } from '$svg';
 
 	const socials = [
 		{

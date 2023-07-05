@@ -10,6 +10,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"paths": {
+			"$svg": ["./src/components/svg"],
 			"$atoms": ["./src/components/atoms"],
 			"$molecules": ["./src/components/molecules"],
 			"$stores": ["./src/stores"],
