@@ -34,7 +34,10 @@
 		<div class="flex-1 min-w-[250px] flex justify-center h-full max-h-[320px] overflow-y-auto">
 			<div>
 				{#each works as work, i}
-					<div class="flex items-center gap-4">
+					<div
+						class="flex items-center gap-4 animate-slide-u-to-d"
+						style:animation-duration={`${300 * (i + 1)}ms`}
+					>
 						<svelte:component this={work.icon} />
 						<div class="flex flex-col gap-0">
 							<p>{$t(work.title)}</p>
@@ -44,7 +47,10 @@
 						</div>
 					</div>
 					{#if i != works.length - 1}
-						<div class="ml-[15px] my-1 h-12 w-px bg-darkblue" />
+						<div
+							class="ml-[15px] my-1 h-12 w-px bg-darkblue animate-slide-u-to-d"
+							style:animation-duration={`${300 * (i + 1)}ms`}
+						/>
 					{/if}
 				{/each}
 			</div>

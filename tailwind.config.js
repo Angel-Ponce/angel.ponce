@@ -18,7 +18,8 @@ export default {
 			animation: {
 				'rotate-one': 'rotate-one 200ms ease',
 				'slide-l-to-r': 'slide-l-to-r 500ms ease-in',
-				'slide-r-to-l': 'slide-r-to-l 500ms ease-in'
+				'slide-r-to-l': 'slide-r-to-l 500ms ease-in',
+				'slide-u-to-d': 'slide-u-to-d 500ms ease-in'
 			},
 			keyframes: {
 				'rotate-one': {
@@ -32,6 +33,10 @@ export default {
 				'slide-r-to-l': {
 					from: { transform: 'translateX(30%)' },
 					to: { transform: 'translateX(0%)' }
+				},
+				'slide-u-to-d': {
+					from: { transform: 'translateY(-30%)' },
+					to: { transform: 'translateY(0%)' }
 				}
 			}
 		}
