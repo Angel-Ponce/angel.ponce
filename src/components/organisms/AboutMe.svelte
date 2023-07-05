@@ -23,8 +23,8 @@
 	];
 </script>
 
-<div class="flex w-full items-center flex-col gap-4">
-	<section id="about" class="flex gap-4 items-center justify-center flex-wrap">
+<section class="flex w-full items-center flex-col gap-4" id="about">
+	<div class="flex gap-4 items-center justify-center flex-wrap">
 		<Angel />
 		<div class="flex flex-col items-center gap-6 animate-slide-r-to-l">
 			<h1 class="font-bold font-inter text-7xl text-center">{$t('Angel Ponce')}</h1>
@@ -45,10 +45,10 @@
 				{/each}
 			</div>
 		</div>
-	</section>
+	</div>
 	<p class="w-full text-justify">
 		{$t(
 			'Angel es ingeniero de sistemas enfocado en crear y mejorar soluciones tecnológicas con el más alto estándar en el mundo, le encanta crear interfaces amigables y fáciles de usar para cualquier persona. Además, es un experto trabajando en equipo ya que posee habilidades de comunicación efectiva y liderazgo. Angel es muy humanitario, le gusta la armonía, la paz y compartír con los animales.'
 		)}
 	</p>
-</div>
+</section>
