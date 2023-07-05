@@ -5,10 +5,12 @@
 	import { onMount } from 'svelte';
 	import store from 'store2';
 	import { setLang } from '$stores';
+	import { register } from 'swiper/element/bundle';
 
 	onMount(() => {
 		const storedLang = store.get('lang');
 		setLang(storedLang || 'es');
+		register();
 	});
 </script>
 
@@ -22,7 +24,7 @@
 
 <MouseFocus />
 <main
-	class="scroll-smooth font-tajawal w-full min-h-screen flex justify-center px-10 py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
+	class="text-lg scroll-smooth font-tajawal w-full min-h-screen flex justify-center px-10 py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
 >
 	<section class="max-w-4xl w-full">
 		<div class="fixed top-10 right-10 flex gap-4 items-center">

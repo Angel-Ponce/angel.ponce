@@ -34,6 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"clsx": "^1.2.1",
-		"store2": "^2.14.2"
+		"store2": "^2.14.2",
+		"swiper": "^10.0.3"
 	}
 }
