@@ -10,7 +10,7 @@
 <script lang="ts">
 	import { IonIcon } from '$atoms';
 	import t from '$i18n/t';
-	import { CUNOR, DHondt, DynamicScheduleWeb, Jequi } from '$svg';
+	import { CUNOR, DHondt, DynamicScheduleWeb, Jequi, Svelte } from '$svg';
 	import { SvelteComponent, onMount } from 'svelte';
 	import { LinkOutline } from 'svelte-ionicons';
 	import type { SwiperOptions, Swiper } from 'swiper/types';
@@ -41,12 +41,20 @@
 			icon: CUNOR,
 			desc: 'Sistema de control de prestamos educativos en Centro Universitario del Norte.',
 			href: 'https://cunor-article-lends.vercel.app'
+		},
+		{
+			title: 'Svelte Reactions',
+			icon: Svelte,
+			desc: 'Una librería útil para implementar reacciones con emojis en programas escritos con Svelte.',
+			href: 'https://github.com/Angel-Ponce/svelte-reactions'
 		}
 	];
 
 	onMount(() => {
 		Object.assign(swiperEl, {
-			pagination: true,
+			pagination: {
+				enabled: true
+			},
 			effect: 'coverflow',
 			grabCursor: true,
 			centeredSlides: true,
@@ -93,8 +101,7 @@
 				{/if}
 			</swiper-slide>
 		{/each}
-		<!--
-		<swiper-slide>Svelte Reactions</swiper-slide>
+		<!--	
 		<swiper-slide>ITIC</swiper-slide>
 		<swiper-slide>SIVOT Auxilio Póstumo</swiper-slide> -->
 	</swiper-container>
@@ -103,5 +110,9 @@
 <style lang="postcss">
 	swiper-slide {
 		@apply !flex !rounded-xl !gap-6 !flex-col !items-center !p-8 !w-full !max-w-xs !h-80 !bg-grayblue !bg-opacity-[0.15];
+	}
+
+	:root {
+		--swiper-pagination-color: #738fa7;
 	}
 </style>
