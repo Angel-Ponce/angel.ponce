@@ -1,6 +1,6 @@
 const en: Record<string, string> = {
 	'Acerca de': 'About',
-	Experiencia: 'Experince',
+	Experiencia: 'Experience',
 	Proyectos: 'Projects',
 	Tecnología: 'Tech',
 	'“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” ~ Bill Gates':
