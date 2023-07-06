@@ -5,5 +5,6 @@ import Finanssoreal from './Finanssoreal.svelte';
 import Jequi from './Jequi.svelte';
 import Pentcloud from './Pentcloud.svelte';
 import VSCode from './VSCode.svelte';
+import CUNOR from './CUNOR.svelte';
 
-export { Angel, DHondt, DynamicScheduleWeb, Pentcloud, Jequi, Finanssoreal, VSCode };
+export { Angel, DHondt, DynamicScheduleWeb, Pentcloud, Jequi, Finanssoreal, VSCode, CUNOR };

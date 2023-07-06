@@ -10,7 +10,7 @@
 <script lang="ts">
 	import { IonIcon } from '$atoms';
 	import t from '$i18n/t';
-	import { DHondt, DynamicScheduleWeb, Jequi } from '$svg';
+	import { CUNOR, DHondt, DynamicScheduleWeb, Jequi } from '$svg';
 	import { SvelteComponent, onMount } from 'svelte';
 	import { LinkOutline } from 'svelte-ionicons';
 	import type { SwiperOptions, Swiper } from 'swiper/types';
@@ -35,6 +35,12 @@
 			icon: DHondt,
 			desc: 'Sistema de análisis de votación política para medir la cantidad de escaños obtenidos por partido.',
 			href: 'https://gt-votes.vercel.app'
+		},
+		{
+			title: 'CUNOR Lends',
+			icon: CUNOR,
+			desc: 'Sistema de control de prestamos educativos en Centro Universitario del Norte.',
+			href: 'https://cunor-article-lends.vercel.app'
 		}
 	];
 
@@ -87,9 +93,7 @@
 				{/if}
 			</swiper-slide>
 		{/each}
-
-		<!-- <swiper-slide>D'hondt Analizer</swiper-slide>
-		<swiper-slide>CUNOR Lends</swiper-slide>
+		<!--
 		<swiper-slide>Svelte Reactions</swiper-slide>
 		<swiper-slide>ITIC</swiper-slide>
 		<swiper-slide>SIVOT Auxilio Póstumo</swiper-slide> -->
