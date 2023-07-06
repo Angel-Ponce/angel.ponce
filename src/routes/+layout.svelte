@@ -20,6 +20,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+	<title>Angel Ponce</title>
 </svelte:head>
 
 <MouseFocus />
