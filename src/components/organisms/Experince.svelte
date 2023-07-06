@@ -4,9 +4,24 @@
 	import { Pentcloud, Finanssoreal, VSCode } from '$svg';
 
 	let works = [
-		{ title: 'Full-Stack Developer', icon: Pentcloud, desc: 'Mar. 2022 ~ Actualmente' },
-		{ title: 'Tech Lead', icon: Finanssoreal, desc: 'Mar. 2021 ~ Mar. 2022' },
-		{ title: 'Freelancer Software Developer', icon: VSCode, desc: 'Oct. 2020 ~ Actualmente' }
+		{
+			title: 'Full-Stack Developer',
+			icon: Pentcloud,
+			desc: 'Mar. 2022 ~ Actualmente',
+			href: 'https://pentcloud.com'
+		},
+		{
+			title: 'Tech Lead',
+			icon: Finanssoreal,
+			desc: 'Mar. 2021 ~ Mar. 2022',
+			href: 'https://finanssoreal.com'
+		},
+		{
+			title: 'Freelancer Software Developer',
+			icon: VSCode,
+			desc: 'Oct. 2020 ~ Actualmente',
+			href: 'https://github.com/Angel-Ponce?tab=repositories'
+		}
 	];
 
 	let experinceYears = 0;
@@ -34,8 +49,10 @@
 		<div class="flex-1 min-w-[250px] flex justify-center items-center h-80 overflow-y-auto">
 			<div>
 				{#each works as work, i}
-					<div
-						class="flex items-center gap-4 animate-slide-u-to-d"
+					<a
+						href={work.href}
+						target="_blank"
+						class="flex items-center gap-4 animate-slide-u-to-d hover:bg-grayblue hover:bg-opacity-20 dark:hover:bg-opacity-10 cursor-pointer rounded-md transition-all duration-200"
 						style:animation-duration={`${300 * (i + 1)}ms`}
 					>
 						<div
@@ -49,7 +66,7 @@
 								{$t(work.desc)}
 							</p>
 						</div>
-					</div>
+					</a>
 					{#if i != works.length - 1}
 						<div
 							class="ml-[20px] my-1 h-12 w-px bg-darkblue dark:bg-grayblue animate-slide-u-to-d"
