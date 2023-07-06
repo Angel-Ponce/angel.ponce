@@ -63,7 +63,7 @@
 		{
 			title: 'SIVOT Auxilio Póstumo',
 			icon: SIVOT,
-			desc: 'Sistema de votaciones nacionales para elecciones de asociación Auxilio Póstumo.'
+			desc: 'Sistema de votaciones nacionales para elecciones de Asociación Auxilio Póstumo.'
 		}
 	];
 
@@ -112,7 +112,7 @@
 							href={project.href}
 							target="_blank"
 						>
-							<IonIcon icon={LinkOutline} />Ver más
+							<IonIcon icon={LinkOutline} />{$t('Ver más')}
 						</a>
 					</div>
 				{/if}
