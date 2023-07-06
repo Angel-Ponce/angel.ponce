@@ -10,7 +10,7 @@
 <script lang="ts">
 	import { IonIcon } from '$atoms';
 	import t from '$i18n/t';
-	import { CUNOR, DHondt, DynamicScheduleWeb, Jequi, Svelte } from '$svg';
+	import { CUNOR, DHondt, DynamicScheduleWeb, ITIC, Jequi, Svelte, SIVOT, Gridia } from '$svg';
 	import { SvelteComponent, onMount } from 'svelte';
 	import { LinkOutline } from 'svelte-ionicons';
 	import type { SwiperOptions, Swiper } from 'swiper/types';
@@ -37,16 +37,33 @@
 			href: 'https://gt-votes.vercel.app'
 		},
 		{
+			title: 'Svelte Reactions',
+			icon: Svelte,
+			desc: 'Una librería útil para implementar reacciones con emojis en programas escritos con Svelte.',
+			href: 'https://github.com/Angel-Ponce/svelte-reactions'
+		},
+		{
+			title: 'ITIC',
+			icon: ITIC,
+			desc: 'Sitio web informativo para el laboratorio de investigación ITIC, el sitio es totalmente personalizable y configurable.',
+			href: 'https://iticusac.com'
+		},
+		{
+			title: 'Gridia',
+			icon: Gridia,
+			desc: 'Solución integral de gestión inteligente del agua, sistema IoT accesible y confiable para administrar el consumo de agua en los hogares.',
+			href: 'https://gridia.io'
+		},
+		{
 			title: 'CUNOR Lends',
 			icon: CUNOR,
 			desc: 'Sistema de control de prestamos educativos en Centro Universitario del Norte.',
 			href: 'https://cunor-article-lends.vercel.app'
 		},
 		{
-			title: 'Svelte Reactions',
-			icon: Svelte,
-			desc: 'Una librería útil para implementar reacciones con emojis en programas escritos con Svelte.',
-			href: 'https://github.com/Angel-Ponce/svelte-reactions'
+			title: 'SIVOT Auxilio Póstumo',
+			icon: SIVOT,
+			desc: 'Sistema de votaciones nacionales para elecciones de asociación Auxilio Póstumo.'
 		}
 	];
 
@@ -101,9 +118,6 @@
 				{/if}
 			</swiper-slide>
 		{/each}
-		<!--	
-		<swiper-slide>ITIC</swiper-slide>
-		<swiper-slide>SIVOT Auxilio Póstumo</swiper-slide> -->
 	</swiper-container>
 </section>
 
