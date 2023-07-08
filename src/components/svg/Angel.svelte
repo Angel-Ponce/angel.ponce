@@ -1,11 +1,27 @@
 <script lang="ts">
+	import { spring } from 'svelte/motion';
+
 	let light: SVGPathElement;
 	let dark: SVGPathElement;
 	const force = {
 		y: 0.007,
 		x: 0.006
 	};
-	const limit = 100;
+	const limit = 200;
+	const lightDepth = spring(
+		{
+			x: 0,
+			y: 0
+		},
+		{ stiffness: 1 }
+	);
+	const darkDepth = spring(
+		{
+			x: 0,
+			y: 0
+		},
+		{ stiffness: 1 }
+	);
 
 	const calculateForce = (value: number, type: 'x' | 'y') => {
 		if (value >= -limit && value <= limit) {
@@ -42,19 +58,26 @@
 			y: y - darkY
 		};
 
-		const lightDepth = {
+		lightDepth.set({
 			x: calculateForce(ligthDistance.x, 'x'),
 			y: calculateForce(ligthDistance.y, 'y')
-		};
+		});
 
-		const darkDepth = {
+		darkDepth.set({
 			x: calculateForce(darkDistance.x, 'x'),
 			y: calculateForce(darkDistance.y, 'y')
-		};
-
-		light.style.transform = `translate(${lightDepth.x * 100}%, ${lightDepth.y * 100}%)`;
-		dark.style.transform = `translate(${darkDepth.x * 100}%, ${darkDepth.y * 100}%)`;
+		});
 	};
+
+	lightDepth.subscribe(({ x, y }) => {
+		if (!light) return;
+		light.style.transform = `translate(${x * 100}%, ${y * 100}%)`;
+	});
+
+	darkDepth.subscribe(({ x, y }) => {
+		if (!dark) return;
+		dark.style.transform = `translate(${x * 100}%, ${y * 100}%)`;
+	});
 </script>
 
 <svelte:window on:mousemove={(e) => update(e.clientX, e.clientY)} />
