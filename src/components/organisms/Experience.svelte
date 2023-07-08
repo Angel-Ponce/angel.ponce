@@ -52,7 +52,7 @@
 					<a
 						href={work.href}
 						target="_blank"
-						class="flex items-center gap-4 animate-slide-u-to-d hover:bg-grayblue hover:bg-opacity-20 dark:hover:bg-opacity-10 cursor-pointer rounded-md transition-all duration-200"
+						class="flex items-center gap-4 animate-slide-u-to-d p-1.5 hover:bg-grayblue hover:bg-opacity-20 dark:hover:bg-opacity-10 cursor-pointer rounded-md transition-all duration-200"
 						style:animation-duration={`${300 * (i + 1)}ms`}
 					>
 						<div
