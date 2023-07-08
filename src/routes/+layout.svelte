@@ -6,6 +6,7 @@
 	import store from 'store2';
 	import { setLang } from '$stores';
 	import { register } from 'swiper/element/bundle';
+	import 'tippy.js/dist/tippy.css';
 
 	onMount(() => {
 		const storedLang = store.get('lang');

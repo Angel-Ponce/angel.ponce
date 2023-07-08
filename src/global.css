@@ -11,3 +11,7 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.tippy-box {
+	@apply !bg-grayblue !text-black !bg-opacity-40 dark:!bg-opacity-20 dark:!text-white !text-xs;
+}

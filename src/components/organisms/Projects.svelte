@@ -10,7 +10,7 @@
 <script lang="ts">
 	import { IonIcon } from '$atoms';
 	import t from '$i18n/t';
-	import { CUNOR, DHondt, DynamicScheduleWeb, ITIC, Jequi, Svelte, SIVOT, Gridia } from '$svg';
+	import { CUNOR, DHondt, DynamicScheduleWeb, ITIC, Jequi, Svelte, SIVOT, Gridia, GTC } from '$svg';
 	import { SvelteComponent, onMount } from 'svelte';
 	import { LinkOutline } from 'svelte-ionicons';
 	import type { SwiperOptions, Swiper } from 'swiper/types';
@@ -29,6 +29,12 @@
 			icon: DynamicScheduleWeb,
 			desc: 'Una plataforma útil para gestionar horarios estudiantiles y actividades personales.',
 			href: 'https://dynamic-schedule-web.vercel.app'
+		},
+		{
+			title: 'Hackaton DIG&TAL GTC Challenge',
+			icon: GTC,
+			desc: 'Creación de solución innovadora, en alizanza con Digital Bank y Amazon Web Services (AWS), (Tercer lugar).',
+			href: 'https://www.linkedin.com/posts/banco-g-t-continental_granfinal-hackathondigitalgtcchallenge-gytcontinental-activity-7032537791490084865-s7M_?utm_source=share&utm_medium=member_desktop'
 		},
 		{
 			title: "D'Hondt Analizer",
@@ -79,7 +85,7 @@
 			coverflowEffect: {
 				rotate: 60,
 				stretch: 0,
-				depth: 100,
+				depth: 150,
 				modifier: 1,
 				slideShadows: false
 			},
@@ -95,6 +101,9 @@
 
 <section id="projects" class="flex w-full items-center flex-col gap-4">
 	<h2 class="font-bold font-inter text-left w-full text-2xl">{$t('Proyectos')}</h2>
+	<p class="w-full text-left">
+		{$t('Puedes echarle un vistazo a alguno de los proyectos en los que Angel ha trabajado.')}
+	</p>
 	<swiper-container bind:this={swiperEl} class="max-w-full w-full">
 		{#each projects as project}
 			<swiper-slide>

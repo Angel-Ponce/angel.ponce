@@ -10,6 +10,7 @@ import Svelte from './Svelte.svelte';
 import ITIC from './ITIC.svelte';
 import SIVOT from './SIVOT.svelte';
 import Gridia from './Gridia.svelte';
+import GTC from './GTC.svelte';
 
 export {
 	Angel,
@@ -20,6 +21,7 @@ export {
 	Gridia,
 	Finanssoreal,
 	SIVOT,
+	GTC,
 	ITIC,
 	VSCode,
 	CUNOR,

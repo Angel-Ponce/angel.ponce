@@ -5,8 +5,8 @@ const en: Record<string, string> = {
 	Tecnología: 'Tech',
 	'“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” ~ Bill Gates':
 		'“Best opportunities come from knowing how to take advantage of small ones” ~ Bill Gates',
-	'Angel es ingeniero de sistemas enfocado en crear y mejorar soluciones tecnológicas con el más alto estándar en el mundo, le encanta crear interfaces amigables y fáciles de usar para cualquier persona. Además, es un experto trabajando en equipo ya que posee habilidades de comunicación efectiva y liderazgo. Angel es muy humanitario, le gusta la armonía, la paz y compartír con los animales.':
-		'Angel is a systems engineer focused on build and improve technological solutions with the heigher world standard, he loves make friendly interfaces to use for anyone. Additionaly, he is an expert working in teams because he has effectiveness comunication and leadership skills. Angel is kinda humanitarian, he likes the harmony, peace and share time with animals.',
+	'Angel es ingeniero de sistemas enfocado en crear y mejorar soluciones tecnológicas con el más alto estándar en el mundo, le encanta crear interfaces amigables y fáciles de usar para cualquier persona. Además, posee habilidades de comunicación efectiva y liderazgo que le permiten adaptarse en cualquier equipo de trabajo. Angel es muy humanitario, le gusta la armonía, la paz y compartír con los animales.':
+		'Angel is a systems engineer focused on building and improving technological solutions with the heigher world standard, he loves make friendly interfaces to use for anyone. Additionaly, he owns effectiveness comunication and leadership skills that allow him to adapt to any work team. Angel is kinda humanitarian, he likes the harmony, peace and share time with animals.',
 	'años de experiencia': 'years of experince',
 	'Mar. 2022 ~ Actualmente': 'Mar. 2022 ~ Present',
 	'Oct. 2020 ~ Actualmente': 'Oct. 2020 ~ Present',
@@ -26,7 +26,12 @@ const en: Record<string, string> = {
 		'System of academical lends control at Centro Universitario del Norte.',
 	'Sistema de votaciones nacionales para elecciones de Asociación Auxilio Póstumo.':
 		'National voting system for Asociación Auxilio Postumo elections.',
-	'Ver más': 'See more'
+	'Ver más': 'See more',
+	'Creación de solución innovadora, en alizanza con Digital Bank y Amazon Web Services (AWS), (Tercer lugar).':
+		'Innovate idea creation with Digital Bank and Amazaon Web Services (AWS), (3rd place).',
+	'Puedes echarle un vistazo a alguno de los proyectos en los que Angel ha trabajado.':
+		'You can take a look to some of the projects where Angel has worked.',
+	Curriculum: 'CV'
 };
 
 export { en };
