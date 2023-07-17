@@ -4,6 +4,7 @@
 	export interface Technology {
 		name: string;
 		icon: typeof SvelteComponent<Record<string, any>>;
+		href?: string;
 	}
 </script>
 
@@ -13,7 +14,9 @@
 
 <div class="w-full flex justify-center items-center flex-wrap gap-4">
 	{#each technologies as tech}
-		<div
+		<a
+			href={tech.href}
+			target="_blank"
 			class="flex flex-col justify-center items-center cursor-pointer select-none saturate-0 hover:saturate-100 transition-all duration-300"
 		>
 			<div class="scale-75 hover:scale-100 transition-transform duration-300">
@@ -24,6 +27,6 @@
 				{/if}
 			</div>
 			<p class="text-sm text-center w-full">{tech.name}</p>
-		</div>
+		</a>
 	{/each}
 </div>
