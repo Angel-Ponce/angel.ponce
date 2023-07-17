@@ -11,9 +11,11 @@ import ITIC from './ITIC.svelte';
 import SIVOT from './SIVOT.svelte';
 import Gridia from './Gridia.svelte';
 import GTC from './GTC.svelte';
+import Bash from './Bash.svelte';
 
 export {
 	Angel,
+	Bash,
 	DHondt,
 	DynamicScheduleWeb,
 	Pentcloud,

@@ -1,5 +1,15 @@
-<script>
+<script lang="ts">
 	import t from '$i18n/t';
+	import { Technologies } from '$molecules';
+	import { Bash } from '$svg';
+	import type { Technology } from '../molecules/Technologies.svelte';
+
+	let technologies: Technology[] = [
+		{
+			name: 'bash',
+			icon: Bash
+		}
+	];
 </script>
 
 <section id="tech" class="flex w-full items-center flex-col gap-4">
@@ -9,4 +19,5 @@
 			'A lo largo del tiempo Angel ha logrado obtener conocimiento y experiencia en diferentes tecnologías, no se podría decir que es un total experto en todas, pero sin duda te sacará de más de algún apuro.'
 		)}
 	</p>
+	<Technologies {technologies} />
 </section>
