@@ -18,7 +18,7 @@
 	<div
 		in:fly={{ y: 30, duration: 200 }}
 		out:fly={{ y: 30, duration: 200 }}
-		class="fixed bottom-10 right-10 w-12 h-12 rounded-md shadow-md flex items-center justify-center cursor-pointer select-none bg-grayblue bg-opacity-10 dark:text-slate-50"
+		class="fixed bottom-10 right-10 w-12 h-12 rounded-md shadow-md flex items-center justify-center cursor-pointer bg-grayblue bg-opacity-10 dark:text-slate-50 z-50"
 		on:click={() => {
 			window.scrollTo({ top: 0, behavior: 'smooth' });
 		}}
