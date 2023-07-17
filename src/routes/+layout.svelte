@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../global.css';
 	import { MouseFocus, ToggleLang } from '$atoms';
-	import { ToggleTheme } from '$molecules';
+	import { ScrollTop, ToggleTheme } from '$molecules';
 	import { onMount } from 'svelte';
 	import store from 'store2';
 	import { setLang } from '$stores';
@@ -25,6 +25,7 @@
 </svelte:head>
 
 <MouseFocus />
+<ScrollTop />
 <main
 	class="text-lg font-tajawal w-full min-h-screen flex justify-center px-10 py-20 bg-slate-50 dark:bg-dark-base dark:text-slate-50 selection:bg-grayblue dark:selection:bg-secondary"
 >
