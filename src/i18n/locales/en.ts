@@ -33,7 +33,7 @@ const en: Record<string, string> = {
 		'You can take a look to some of the projects where Angel has worked.',
 	Curriculum: 'CV',
 	'A lo largo del tiempo Angel ha logrado obtener conocimiento y experiencia en diferentes tecnologías, no se podría decir que es un total experto en todas, pero sin duda te sacará de más de algún apuro.':
-		'Over time Angel has achieved experince and knowledge in different technologies, could not say that he is a total expert in all of them, but he will get you out of more than one trouble.'
+		'Over time Angel has achieved experince and knowledge in different technologies, could not say that he is a total expert in all of them, but he will get you out of more than one trouble.',
 };
 
 export { en };

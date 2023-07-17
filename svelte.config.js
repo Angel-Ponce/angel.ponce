@@ -18,9 +18,9 @@ const config = {
 			$molecules: './src/components/molecules',
 			$organisms: './src/components/organisms',
 			$stores: './src/stores',
-			$i18n: './src/i18n'
-		}
-	}
+			$i18n: './src/i18n',
+		},
+	},
 };
 
 export default config;

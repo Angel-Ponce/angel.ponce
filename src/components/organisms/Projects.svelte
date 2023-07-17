@@ -22,61 +22,61 @@
 			title: 'Jequi',
 			icon: Jequi,
 			desc: 'Una plataforma multi-empresarial que facilita la gestión de recursos humanos en todos los aspectos posibles.',
-			href: 'https://jequi.io'
+			href: 'https://jequi.io',
 		},
 		{
 			title: 'Dynamic Schedule Web',
 			icon: DynamicScheduleWeb,
 			desc: 'Una plataforma útil para gestionar horarios estudiantiles y actividades personales.',
-			href: 'https://dynamic-schedule-web.vercel.app'
+			href: 'https://dynamic-schedule-web.vercel.app',
 		},
 		{
 			title: 'Hackaton DIG&TAL GTC Challenge',
 			icon: GTC,
 			desc: 'Creación de solución innovadora, en alizanza con Digital Bank y Amazon Web Services (AWS), (Tercer lugar).',
-			href: 'https://www.linkedin.com/posts/banco-g-t-continental_granfinal-hackathondigitalgtcchallenge-gytcontinental-activity-7032537791490084865-s7M_?utm_source=share&utm_medium=member_desktop'
+			href: 'https://www.linkedin.com/posts/banco-g-t-continental_granfinal-hackathondigitalgtcchallenge-gytcontinental-activity-7032537791490084865-s7M_?utm_source=share&utm_medium=member_desktop',
 		},
 		{
 			title: "D'Hondt Analizer",
 			icon: DHondt,
 			desc: 'Sistema de análisis de votación política para medir la cantidad de escaños obtenidos por partido.',
-			href: 'https://gt-votes.vercel.app'
+			href: 'https://gt-votes.vercel.app',
 		},
 		{
 			title: 'Svelte Reactions',
 			icon: Svelte,
 			desc: 'Una librería útil para implementar reacciones con emojis en programas escritos con Svelte.',
-			href: 'https://github.com/Angel-Ponce/svelte-reactions'
+			href: 'https://github.com/Angel-Ponce/svelte-reactions',
 		},
 		{
 			title: 'ITIC',
 			icon: ITIC,
 			desc: 'Sitio web informativo para el laboratorio de investigación ITIC, el sitio es totalmente personalizable y configurable.',
-			href: 'https://iticusac.com'
+			href: 'https://iticusac.com',
 		},
 		{
 			title: 'Gridia',
 			icon: Gridia,
 			desc: 'Solución integral de gestión inteligente del agua, sistema IoT accesible y confiable para administrar el consumo de agua en los hogares.',
-			href: 'https://gridia.io'
+			href: 'https://gridia.io',
 		},
 		{
 			title: 'CUNOR Lends',
 			icon: CUNOR,
 			desc: 'Sistema de control de prestamos educativos en Centro Universitario del Norte.',
-			href: 'https://cunor-article-lends.vercel.app'
+			href: 'https://cunor-article-lends.vercel.app',
 		},
 		{
 			title: 'SIVOT Auxilio Póstumo',
 			icon: SIVOT,
-			desc: 'Sistema de votaciones nacionales para elecciones de Asociación Auxilio Póstumo.'
-		}
+			desc: 'Sistema de votaciones nacionales para elecciones de Asociación Auxilio Póstumo.',
+		},
 	];
 
 	onMount(() => {
 		Object.assign(swiperEl, {
 			pagination: {
-				enabled: true
+				enabled: true,
 			},
 			effect: 'coverflow',
 			grabCursor: true,
@@ -87,14 +87,14 @@
 				stretch: 0,
 				depth: 150,
 				modifier: 1,
-				slideShadows: false
+				slideShadows: false,
 			},
 			initialSlide: 1,
 			on: {
 				init: (sw) => {
 					swiper = sw;
-				}
-			}
+				},
+			},
 		} as SwiperOptions);
 	});
 </script>

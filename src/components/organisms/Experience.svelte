@@ -8,20 +8,20 @@
 			title: 'Full-Stack Developer',
 			icon: Pentcloud,
 			desc: 'Mar. 2022 ~ Actualmente',
-			href: 'https://pentcloud.com'
+			href: 'https://pentcloud.com',
 		},
 		{
 			title: 'Tech Lead',
 			icon: Finanssoreal,
 			desc: 'Mar. 2021 ~ Mar. 2022',
-			href: 'https://finanssoreal.com'
+			href: 'https://finanssoreal.com',
 		},
 		{
 			title: 'Freelancer Software Developer',
 			icon: VSCode,
 			desc: 'Oct. 2020 ~ Actualmente',
-			href: 'https://github.com/Angel-Ponce?tab=repositories'
-		}
+			href: 'https://github.com/Angel-Ponce?tab=repositories',
+		},
 	];
 
 	let experinceYears = 0;

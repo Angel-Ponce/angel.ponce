@@ -5,20 +5,20 @@
 	const links = [
 		{
 			text: 'Acerca de',
-			href: '#about'
+			href: '#about',
 		},
 		{
 			text: 'Experiencia',
-			href: '#experince'
+			href: '#experince',
 		},
 		{
 			text: 'Proyectos',
-			href: '#projects'
+			href: '#projects',
 		},
 		{
 			text: 'Tecnología',
-			href: '#tech'
-		}
+			href: '#tech',
+		},
 	];
 </script>
 

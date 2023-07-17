@@ -15,7 +15,7 @@ const t = readable<(s: string, variables?: Variables) => string>(
 				return translate(s, locale, variables);
 			});
 		});
-	}
+	},
 );
 
 const translate = (s: string, locale: 'es' | 'en', variables?: Variables): string => {

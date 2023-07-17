@@ -5,22 +5,22 @@
 	let dark: SVGPathElement;
 	const force = {
 		y: 0.007,
-		x: 0.006
+		x: 0.006,
 	};
 	const limit = 200;
 	const lightDepth = spring(
 		{
 			x: 0,
-			y: 0
+			y: 0,
 		},
-		{ stiffness: 1 }
+		{ stiffness: 1 },
 	);
 	const darkDepth = spring(
 		{
 			x: 0,
-			y: 0
+			y: 0,
 		},
-		{ stiffness: 1 }
+		{ stiffness: 1 },
 	);
 
 	const calculateForce = (value: number, type: 'x' | 'y') => {
@@ -50,22 +50,22 @@
 
 		const ligthDistance = {
 			x: x - lightX,
-			y: y - lightY
+			y: y - lightY,
 		};
 
 		const darkDistance = {
 			x: x - darkX,
-			y: y - darkY
+			y: y - darkY,
 		};
 
 		lightDepth.set({
 			x: calculateForce(ligthDistance.x, 'x'),
-			y: calculateForce(ligthDistance.y, 'y')
+			y: calculateForce(ligthDistance.y, 'y'),
 		});
 
 		darkDepth.set({
 			x: calculateForce(darkDistance.x, 'x'),
-			y: calculateForce(darkDistance.y, 'y')
+			y: calculateForce(darkDistance.y, 'y'),
 		});
 	};
 

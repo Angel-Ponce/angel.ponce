@@ -7,30 +7,30 @@
 
 	const tippy = createTippy({
 		placement: 'bottom',
-		arrow: false
+		arrow: false,
 	});
 
 	const socials = [
 		{
 			href: 'https://linkedin.com/in/angel-p11/',
 			icon: LogoLinkedin,
-			name: 'Linkedin'
+			name: 'Linkedin',
 		},
 		{
 			href: 'https://github.com/Angel-Ponce',
 			icon: LogoGithub,
-			name: 'Github'
+			name: 'Github',
 		},
 		{
 			href: 'mailto:acdpf000@gmail.com',
 			icon: Mail,
-			name: 'Gmail'
+			name: 'Gmail',
 		},
 		{
 			href: 'https://onedrive.live.com/View.aspx?resid=684BD9C903415EAA!41859&wdEmbedFS=1&authkey=!ABgS3ugFQPd5f4M',
 			icon: DocumentText,
-			name: 'Curriculum'
-		}
+			name: 'Curriculum',
+		},
 	];
 </script>
 
@@ -41,7 +41,7 @@
 			<h1 class="font-bold font-inter text-7xl text-center">{$t('Angel Ponce')}</h1>
 			<p class="italic max-w-sm text-base text-center">
 				{$t(
-					'“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” ~ Bill Gates'
+					'“Las grandes oportunidades nacen de haber sabido aprovechar las pequeñas” ~ Bill Gates',
 				)}
 			</p>
 			<div class="flex items-center gap-4">
@@ -60,7 +60,7 @@
 	</div>
 	<p class="w-full text-justify">
 		{$t(
-			'Angel es ingeniero de sistemas enfocado en crear y mejorar soluciones tecnológicas con el más alto estándar en el mundo, le encanta crear interfaces amigables y fáciles de usar para cualquier persona. Además, posee habilidades de comunicación efectiva y liderazgo que le permiten adaptarse en cualquier equipo de trabajo. Angel es muy humanitario, le gusta la armonía, la paz y compartír con los animales.'
+			'Angel es ingeniero de sistemas enfocado en crear y mejorar soluciones tecnológicas con el más alto estándar en el mundo, le encanta crear interfaces amigables y fáciles de usar para cualquier persona. Además, posee habilidades de comunicación efectiva y liderazgo que le permiten adaptarse en cualquier equipo de trabajo. Angel es muy humanitario, le gusta la armonía, la paz y compartír con los animales.',
 		)}
 	</p>
 </section>

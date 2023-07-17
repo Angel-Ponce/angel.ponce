@@ -10,7 +10,7 @@
 	on:mousemove={(e) => {
 		coords.set({
 			x: e.clientX - 6,
-			y: e.clientY - 6
+			y: e.clientY - 6,
 		});
 	}}
 	on:mousedown={() => ratio.set(90)}
