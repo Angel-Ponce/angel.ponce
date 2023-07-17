@@ -1,5 +1,5 @@
 <svg viewBox="0 0 128 128" width={56} height={56}>
-	<g fill="#181616"
+	<g class="fill-[#181616] dark:fill-gray-300"
 		><path
 			fill-rule="evenodd"
 			clip-rule="evenodd"
