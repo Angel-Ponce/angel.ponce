@@ -12,7 +12,7 @@
 
 	const socials = [
 		{
-			href: 'https://linkedin.com/in/angel-p11/',
+			href: 'https://linkedin.com/in/angelponcef/',
 			icon: LogoLinkedin,
 			name: 'Linkedin',
 		},
@@ -27,7 +27,7 @@
 			name: 'Gmail',
 		},
 		{
-			href: 'https://onedrive.live.com/View.aspx?resid=684BD9C903415EAA!41859&wdEmbedFS=1&authkey=!ABgS3ugFQPd5f4M',
+			href: 'https://1drv.ms/b/s!AqpeQQPJ2Utohco8OzEEUFjNFfA9KQ?e=SGVY6D',
 			icon: DocumentText,
 			name: 'Curriculum',
 		},
