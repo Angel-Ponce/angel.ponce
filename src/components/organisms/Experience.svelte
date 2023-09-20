@@ -1,13 +1,19 @@
 <script>
 	import t from '$i18n/t';
 	import { fly } from 'svelte/transition';
-	import { Pentcloud, Finanssoreal, VSCode } from '$svg';
+	import { Pentcloud, Finanssoreal, VSCode, Startrack } from '$svg';
 
 	let works = [
 		{
+			title: 'Frontend Engineer',
+			icon: Startrack,
+			desc: 'Sep. 2023 ~ Actualmente',
+			href: 'https://www.gps.gt',
+		},
+		{
 			title: 'Full-Stack Developer',
 			icon: Pentcloud,
-			desc: 'Mar. 2022 ~ Actualmente',
+			desc: 'Mar. 2022 ~ Sep. 2023',
 			href: 'https://pentcloud.com',
 		},
 		{
@@ -46,7 +52,7 @@
 			</h3>
 			<p class="text-center">{$t('años de experiencia')}</p>
 		</div>
-		<div class="flex-1 min-w-[250px] flex justify-center items-center h-80 overflow-y-auto">
+		<div class="flex-1 min-w-[250px] flex justify-center items-start h-80 overflow-y-auto">
 			<div>
 				{#each works as work, i}
 					<a
@@ -69,7 +75,7 @@
 					</a>
 					{#if i != works.length - 1}
 						<div
-							class="ml-[20px] my-1 h-12 w-px bg-darkblue dark:bg-grayblue animate-slide-u-to-d"
+							class="ml-[23px] my-1 h-12 w-px bg-darkblue dark:bg-grayblue animate-slide-u-to-d"
 							style:animation-duration={`${300 * (i + 1)}ms`}
 						/>
 					{/if}

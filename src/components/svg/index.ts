@@ -40,6 +40,7 @@ import Sequelize from './Sequelize.svelte';
 import SQLServer from './SQLServer.svelte';
 import TailwindCSS from './TailwindCSS.svelte';
 import TypeScript from './TypeScript.svelte';
+import Startrack from './Startrack.svelte';
 
 export {
 	Angel,
@@ -84,4 +85,5 @@ export {
 	VSCode,
 	CUNOR,
 	Svelte,
+	Startrack,
 };
